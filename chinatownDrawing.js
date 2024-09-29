@@ -2,9 +2,9 @@ var readlineSync = require('readline-sync');
 run(parseInt(process.argv[2]));
 
 function run(numPlayers) {
-	if (!numPlayers || isNaN(numPlayers) || numPlayers > 6 || numPlayers < 3) {
-		console.log(!numPlayers, typeof numPlayers !== "number", numPlayers > 6, numPlayers < 3);
-		console.log("PLEASE ENTER THE NUMBER OF PLAYERS YOU WANT\nYOU CAN HAVE FROM 3 - 6 PLAYERS");
+	if (!numPlayers || isNaN(numPlayers) || numPlayers > 5 || numPlayers < 3) {
+		console.log(!numPlayers, typeof numPlayers !== "number", numPlayers > 5, numPlayers < 3);
+		console.log("PLEASE ENTER THE NUMBER OF PLAYERS YOU WANT\nYOU CAN HAVE FROM 3 - 5 PLAYERS");
 		return;
 	}
 
