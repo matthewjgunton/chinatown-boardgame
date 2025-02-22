@@ -72,6 +72,9 @@ function run(numPlayers) {
 				const returnedCards = readlineSync.question(que).split(",");
 				const returnedCardsInt = [];
 				const n = returnedCards.length;
+				if (returnedCards[0] == "") {
+					continue;
+				}
 				let loop = false;
 				for (let j = 0; j < n; j++) {
 					let num = parseInt(returnedCards[j]);
